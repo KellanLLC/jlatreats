@@ -1,0 +1,25 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+.vscode/
+.idea/
+
+# Tooling / scratch (not part of the website)
+.agents/
+.hallmark/
+skills-lock.json
+
+# Raw source photos/videos from the client (~47MB, kept locally; the site
+# uses its own optimized copies in site/assets). Remove this line to commit them.
+content/
+
+# Scratch files used while developing (screenshots, throwaway scripts)
+/shot*.py
+/dbg*.py
+/chk*.py
+/diag*.py
+/*.png
+!README*.png

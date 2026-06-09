@@ -1,0 +1,89 @@
+/* Hallmark · tokens · JLA Sweet Treats
+ * theme: custom · vibe: "vintage patisserie, blush & gold, hand-dipped"
+ * paper: oklch(95% 0.014 45) · accent: oklch(64% 0.12 78)
+ * display: Cormorant Garamond · body: EB Garamond
+ * axes: light / roman-serif / chromatic-amber-gold (~78°)
+ */
+
+:root {
+  /* ---- Colour · OKLCH, tinted toward blush + gold, no pure #000/#fff ---- */
+  --color-paper:      oklch(96% 0.013 50);   /* blush-cream base surface */
+  --color-paper-2:    oklch(93% 0.019 38);   /* deeper blush band */
+  --color-paper-3:    oklch(89% 0.026 32);   /* deepest blush (cards / wells) */
+  --color-cocoa:      oklch(28% 0.045 52);   /* deep chocolate band */
+  --color-cocoa-2:    oklch(23% 0.040 50);   /* darkest chocolate */
+
+  --color-ink:        oklch(27% 0.045 50);   /* chocolate text on light */
+  --color-ink-2:      oklch(43% 0.038 52);   /* secondary text */
+  --color-paper-ink:  oklch(95% 0.015 60);   /* cream text on dark cocoa */
+  --color-paper-ink2: oklch(82% 0.020 60);   /* secondary text on dark */
+
+  --color-rule:       oklch(83% 0.020 55);   /* hairline divider */
+  --color-rule-2:     oklch(88% 0.016 50);   /* faint divider */
+  --color-rule-gold:  oklch(72% 0.080 80);   /* gold hairline */
+  --color-muted:      oklch(53% 0.030 50);   /* de-emphasised text */
+
+  --color-accent:     oklch(64% 0.120 78);   /* antique gold — the signal */
+  --color-accent-deep:oklch(56% 0.135 76);   /* gold pressed / hover */
+  --color-accent-ink: oklch(25% 0.045 55);   /* chocolate text on gold fill */
+  --color-focus:      oklch(58% 0.155 78);   /* focus ring — gold, high chroma */
+
+  /* ---- Type ---- */
+  --font-display: "Cormorant Garamond", "Cormorant", ui-serif, Georgia, serif;
+  --font-body:    "EB Garamond", ui-serif, Georgia, serif;
+
+  /* Major-third (1.25) scale, 16px base */
+  --text-xs:   0.8rem;
+  --text-sm:   0.9rem;
+  --text-base: 1.0625rem;   /* 17px — Garamond reads small; lift the floor */
+  --text-md:   1.3125rem;
+  --text-lg:   1.625rem;
+  --text-xl:   2.0625rem;
+  --text-2xl:  2.625rem;
+  --text-3xl:  3.375rem;
+  --text-display:   clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-display-s: clamp(2.25rem, 3.5vw + 1rem, 3.75rem);
+
+  --tracking-label: 0.22em;   /* tracked small-caps labels */
+  --tracking-tight: -0.01em;
+
+  /* ---- Spacing · 4pt scale ---- */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1.25rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 7rem;
+  --space-4xl: 10rem;
+
+  /* ---- Motion ---- */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 240ms;
+  --dur-long:  560ms;
+
+  /* ---- Paper textures (color-matched so torn seams blend) ---- */
+  --color-seam-brown: #3d2819;   /* matches brown-texture + torn-edge browns */
+  --color-seam-cream: #f0e6db;   /* matches torn-edge cream side */
+  --img-paper-cream: url("../assets/paper-cream.jpg");
+  --img-paper-blush: url("../assets/paper-blush.jpg");
+  --img-brown:       url("../assets/brown-texture.jpg");
+  --img-cardstock:   url("../assets/cardstock-texture.png");
+
+  /* ---- Shadows ---- */
+  --shadow-text: 0 1px 2px oklch(20% 0.03 50 / 0.6), 0 2px 18px oklch(16% 0.03 50 / 0.55);
+
+  /* ---- Radius · soft, near-square (vintage, not pill) ---- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* ---- z-scale ---- */
+  --z-base: 1;
+  --z-grain: 2;
+  --z-nav: 50;
+  --z-top: 100;
+}
