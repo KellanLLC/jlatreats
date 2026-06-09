@@ -8,32 +8,34 @@ hand-dipped). No build step, no frameworks.
 
 ## Structure
 
+The repo root **is** the web root.
+
 ```
-site/
-  index.html        # the page
-  css/
-    tokens.css      # design tokens (colour, type, spacing, motion, textures)
-    styles.css      # all component styles
-  js/
-    main.js         # scroll reveals, the order-form modal, mobile "What we dip" drawer
-  assets/           # images, the process video, fonts-as-images, textures
-content/            # raw source photos/videos from the client (working material; not used at runtime)
+index.html        # the page
+css/
+  tokens.css      # design tokens (colour, type, spacing, motion, textures)
+  styles.css      # all component styles
+js/
+  main.js         # scroll reveals, the order-form modal, mobile "What we dip" drawer
+assets/           # images, the process video, textures, favicon
+content/          # raw source photos/videos (local only — gitignored, not used at runtime)
 ```
 
 ## Running locally
 
-It's plain static files — open `site/index.html`, or serve the folder:
+It's plain static files — open `index.html`, or serve the folder:
 
 ```bash
 # from the repo root
-python -m http.server 8000 --directory site
+python -m http.server 8000
 # then visit http://localhost:8000
 ```
 
 ## Deploying
 
-Publish the **`site/`** folder as the web root (e.g. Netlify "publish directory" = `site`,
-GitHub Pages from `/site`, Cloudflare Pages output dir = `site`). Nothing to build.
+The repo root is the web root, so there's nothing to build. On **Cloudflare Pages**:
+framework preset **None**, build command empty, build output directory **`/`** (leave blank).
+Same idea on Netlify (publish directory `.`) or GitHub Pages (deploy from root).
 
 ## Highlights
 
