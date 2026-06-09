@@ -1,7 +1,7 @@
 # JLA Sweet Treats
 
 Marketing site for **JLA Sweet Treats** by Samantha Jackson — small-batch, hand-dipped
-chocolate strawberries, Oreos, pretzels, cake pops & dessert cups in Baltimore / Dundalk, Maryland.
+chocolate strawberries, Oreos, pretzels, cake pops & dessert cups in Baltimore, Maryland.
 
 A single-page, dependency-free static site (vintage-patisserie editorial style — blush & gold,
 hand-dipped). No build step, no frameworks.
