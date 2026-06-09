@@ -23,3 +23,10 @@ content/
 /diag*.py
 /*.png
 !README*.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
